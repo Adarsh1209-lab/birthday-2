@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    overflow-x: hidden;
+    touch-action: pan-y;
+}
+
+h1 {
+    color: #d23669;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 0 auto 50px;
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-out;
+    cursor: grab;
+}
+
+.carousel:active {
+    cursor: grabbing;
+}
+
+.photo-item {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -125px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    box-sizing: border-box;
+}
+
+/* Frame styles */
+.frame1 {
+    border: 15px solid #f8d7da;
+    border-image: linear-gradient(45deg, #f8d7da, #fff3cd) 1;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.frame2 {
+    border: 10px solid transparent;
+    border-image: linear-gradient(45deg, #ff758c, #ff7eb3) 1;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.frame3 {
+    border: 8px double #d23669;
+    background: #fff9f9;
+    padding: 8px;
+    box-shadow: 0 5px 15px rgba(210,54,105,0.2);
+}
+
+.frame4 {
+    border: 12px solid #a0e7e5;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 7px 18px rgba(0,0,0,0.12);
+}
+
+.frame5 {
+    border: 5px dashed #b5ead7;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.frame6 {
+    border: 10px solid #ffdac1;
+    background: white;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 0 9px 22px rgba(0,0,0,0.13);
+}
+
+.frame7 {
+    border: 6px solid #e2f0cb;
+    background: white;
+    padding: 7px;
+    box-shadow: 0 8px 19px rgba(0,0,0,0.11);
+}
+
+.frame8 {
+    border: 3px solid #c7ceea;
+    background: white;
+    padding: 12px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+}
+
+.photo-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.photo-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+}
+
+.photo-quote {
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.birthday-message {
+    max-width: 600px;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.instructions {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}

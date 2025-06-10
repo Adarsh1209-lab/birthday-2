@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Birthday Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Happy Birthday!<br><span style="font-size: 0.7em;">Swipe to See Memories</span></h1>
+
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <!-- Photos will be added by JavaScript -->
+        </div>
+    </div>
+
+    <p class="instructions">← Swipe left/right or drag to rotate →</p>
+
+    <div class="birthday-message">
+        <p>May your special day be filled with happiness, love, and wonderful memories!</p>
+    </div>
+
+    <!-- Background music -->
+    <audio autoplay loop hidden>
+        <source src="birthday.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
