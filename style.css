@@ -164,3 +164,24 @@ h1 {
   height: 100%;
   pointer-events: none;
 }
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.nav-buttons button:hover {
+  transform: scale(1.1);
+  background-color: #ffecf2;
+}
