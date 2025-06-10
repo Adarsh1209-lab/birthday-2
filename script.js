@@ -91,3 +91,13 @@ document.addEventListener('DOMContentLoaded', function () {
     carousel.addEventListener('touchstart', startDrag, { passive: false });
     updateCarousel();
 });
+  // Manual Rotate Buttons
+  document.getElementById('rotateLeft').addEventListener('click', () => {
+    currentAngle -= angleStep;
+    update();
+  });
+
+  document.getElementById('rotateRight').addEventListener('click', () => {
+    currentAngle += angleStep;
+    update();
+  });
